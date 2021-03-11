@@ -1,6 +1,6 @@
 import time
 from datetime import datetime
-
+import os
 # datetime object containing current date and time
 now = datetime.now()
  
@@ -9,7 +9,11 @@ now = datetime.now()
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 
 
-
+str = "Messi is the best soccer player"
+>>> "soccer" in str
+True
+>>> "football" in str
+False
 
 
 
@@ -37,12 +41,21 @@ time.sleep(2)
 print("The murder was commited at 1 am in the morning\n")
 try:
   murder=float(input("Who is the murder? (number of suspect)>>>"))
-  if murder == 1:
-    print("\nYou found the correct murderer. Reasons are Kmart is not open at 1am and Kmart did not exist in 1976")
-  else:
+  if murder != 1:
     print("\nYou got the wrong man. You are fired from your job and are fined $10000. Restart to try again")
+    quit()
+  else:
+    print("\nYou found the correct murderer. Reasons are Kmart is not open at 1am and Kmart did not exist in 1976.")
+    time.sleep(2)
+    print("Entering level 2")
+    time.sleep(4)
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 except ValueError:
   quit("\nYou got fired for invalid input of suspect. Restart to try again")
 
-
+time.sleep(2)
+input("Press enter to start level 2")
+time.sleep(2)
+print("Use questions to find out who the thief is.")
 
