@@ -14,6 +14,7 @@ dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 
 
 
+
 print("You are a detective\n")
 time.sleep(2)
 print("Solve the case\n")
@@ -50,7 +51,7 @@ try:
 
 except ValueError:
   quit("\nYou got fired for invalid input of suspect. Restart to try again")
-
+  
 time.sleep(2)
 input("Press enter to start level 2")
 time.sleep(2)
@@ -58,7 +59,7 @@ print("Use questions to find out who the thief is.")
 
 while True:
   time.sleep(2)
-  sentance=(input("\nAsk a question or put in a number of the suspect who commited the crime>>>"))
+  sentance=(input("\nAsk a question or put in a number of the suspect who commited the crime>>> "))
   if "where" and "you" in sentance:
     print("Suspect 1 was at a friends house")
     print("Suspect 2 was sleeping")
@@ -78,10 +79,10 @@ while True:
   elif "friend" and "what" in sentance:
     print("Suspect 1 and friend walked past the robbed house and went up the drive of the house according to a passbyer. He did not see them come out.")
   
-  elif "2" or "3" or "4" in sentance:
+  elif sentance != "1":
     print("You are fired from your job. Restart to try again")
     quit()
-  elif "1" or "suspect 1" in sentance:
+  elif sentance == "1":
     print("Great job, you got the man. He and his friend commited the crime togther.")
     break
   else: 
