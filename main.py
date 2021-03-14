@@ -67,17 +67,12 @@ while True:
   elif "time" in sentance:
     print("The theif struck at 9:00pm on Wednesday, 2009")
   elif "alibi" in sentance:
-    print("Suspect 1's friend says he was with him the whole time")
+    print("Suspect 1's friend says he was with him the whole time. They were at Pak'n'save till 10:00pm")
     print("Suspect 2's wife said that he went to bed at around 8:30pm")
-    print("Suspect 3's family said he was eating dinner from 8:30 to 9:30 ")
-    print("Suspect 4 does not have an alibi")
+    print("Suspect 3's family said he was eating pizza with them from 8:30 to 9:30 ")
+    print("Suspect 4 does not have an alibi but aid he was watching Thomas the tank engine on TV")
   elif "where" and "crime" in sentance:
     print("The crime was commited at the house next door to Pak'n'save")
-  elif "what" and "doing" and "were" in sentance:
-    print("Suspect 1 was at Pak'n'save with his friend")
-    print("Suspect 2 was sleeping")
-    print("Suspect 3 was eating pizza t home with his family")
-    print("Suspect 4 was at home watching Thomas the tank engine on tv")
   elif "tv" in sentance:
     print("From 8pm to 9pm was Thomas the tank engine on TV")
   elif "friend" and "what" in sentance:
