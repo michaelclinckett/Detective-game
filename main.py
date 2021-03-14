@@ -80,16 +80,15 @@ while True:
     print("Suspect 4 was at home watching Thomas the tank engine on tv")
   elif "tv" in sentance:
     print("From 8pm to 9pm was Thomas the tank engine on TV")
-  
-  
   elif "friend" and "what" in sentance:
     print("Suspect 1 and friend walked past the robbed house and went up the drive of the house according to a passbyer. He did not see them come out.")
-  elif "1" or "suspect 1" in sentance:
-    print("Great job, you got the man. He and his friend commited the crime togther.")
-    break
+  
   elif "2" or "3" or "4" in sentance:
     print("You are fired from your job. Restart to try again")
     quit()
+  elif "1" or "suspect 1" in sentance:
+    print("Great job, you got the man. He and his friend commited the crime togther.")
+    break
   else: 
     print("This qusetion cannot be answered")
 print("entering level 3 (coming soon)")
