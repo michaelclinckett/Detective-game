@@ -9,7 +9,7 @@ now = datetime.now()
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 
 
-""" 
+
 
 print("You are a detective\n")
 time.sleep(2)
@@ -48,7 +48,7 @@ try:
 except ValueError:
   quit("\nYou got fired for invalid input of suspect. Restart to try again")
 
-""" 
+
 
   
 time.sleep(2)
@@ -64,23 +64,23 @@ while True:
     print("Suspect 2 was sleeping")
     print("Suspect 3 was eating dinner with his family")
     print("Suspect 4 was watching tv at home")
-  if "time" in sentance:
+  elif "time" in sentance:
     print("The theif struck at 9:00pm on Wednesday, 2009")
-  if "alibi" in sentance:
+  elif "alibi" in sentance:
     print("Suspect 1's friend says he was with him the whole time. They were at Pak'n'save till 10:00pm")
     print("Suspect 2's wife said that he went to bed at around 8:30pm")
     print("Suspect 3's family said he was eating pizza with them from 8:30 to 9:30 ")
     print("Suspect 4 does not have an alibi but aid he was watching Thomas the tank engine on TV")
-  if "where" and "crime" in sentance:
+  elif "where" and "crime" in sentance:
     print("The crime was commited at the house next door to Pak'n'save")
-  if "tv" in sentance:
+  elif "tv" in sentance:
     print("From 8pm to 9pm was Thomas the tank engine on TV")
-  if "friend" and "what" in sentance:
+  elif "friend" and "what" in sentance:
     print("Suspect 1 and friend walked past the robbed house and went up the drive of the house according to a passbyer. He did not see them come out.")
-  if sentance == "2" or "3" or "4":
+  elif sentance == "2" or sentance == "3" or sentance == "4":
     print("You are fired from your job. Restart to try again")
     quit()
-  if sentance == "1":
+  elif sentance == "1":
     print("Great job, you got the man. He and his friend commited the crime togther.")
     break
   else: 
