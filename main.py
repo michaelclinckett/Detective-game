@@ -10,25 +10,25 @@ now = datetime.now()
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 
 
-Suspect_number_choice=[1,2,3,4]                           
+Suspect_number_choice=['1','2','3','4']                           
 selector=choice(Suspect_number_choice)    
 
-if selector == 1:
+if selector == '1':
   suspect_1='1'
   suspect_2='2'
   suspect_3='3'
   suspect_4='4'
-elif selector == 2:
+elif selector == '2':
   suspect_1='4'
   suspect_2='1'
   suspect_3='2'
   suspect_4='3'
-elif selector == 3:
+elif selector == '3':
   suspect_1='3'
   suspect_2='4'
   suspect_3='1'
   suspect_4='2'
-elif selector == 4:
+elif selector == '4':
   suspect_1='2'
   suspect_2='3'
   suspect_3='4'
@@ -46,7 +46,7 @@ def start_up():
     level1()
   elif customerNum == '2':
     level2()
-  elif cutomerNum == '3':
+  elif customerNum == '3':
     level3()
   time.sleep(1)
 def level1():
