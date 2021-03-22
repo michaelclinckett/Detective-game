@@ -77,7 +77,7 @@ def level1():
       print("\nYou found the correct murderer. Reasons are Kmart is not open at 1am and Kmart did not exist in 1976.")
       time.sleep(1)
       print("Entering level 2")
-      time.sleep(4)
+      time.sleep(7)
       os.system('cls' if os.name == 'nt' else 'clear')
 
   except ValueError:
