@@ -43,10 +43,13 @@ def start_up():
   time.sleep(1)
   customerNum = input("Press enter to start level 1")
   if customerNum == '1':
+    print("\nAccess accepted\n")
     level1()
   elif customerNum == '2':
+    print("\nAccess accepted\n")
     level2()
   elif customerNum == '3':
+    print("\nAccess accepted\n")
     level3()
   time.sleep(1)
 def level1():
@@ -122,7 +125,7 @@ def level2():
       print("Great job, you got the man. He and his friend commited the crime togther.")
       time.sleep(1)
       print("entering level 3")
-      time.sleep(4)
+      time.sleep(7)
       os.system('cls' if os.name == 'nt' else 'clear')
       break
     else: 
