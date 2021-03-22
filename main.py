@@ -93,7 +93,7 @@ def level2():
 
   while True:
     time.sleep(1)
-    sentence=(input("\nAsk a question or put in a number of the suspect who commited the crime\n>>> "))
+    sentence=(input("\nAsk a question or put in a number of the suspect who commited the crime\n(Type hint for help)\n>>> "))
     if "where" in sentence and "you" in sentence:
       print("Suspect", suspect_1, "was at a friends house")
       print("Suspect", suspect_2, " was sleeping")
@@ -110,6 +110,9 @@ def level2():
       print("The crime was commited at the house next door to Pak'n'save")
     elif "tv" in sentence:
       print("From 8pm to 9pm was Thomas the tank engine on TV")
+    elif "hint" in sentence:
+      print("If you are stuck, ask about where they were during the crime or what they were doing. \n Make sure to check their alibi and make sure that they are telling the truth.")
+      
     elif "friend" in sentence and "what" in sentence:
       print("Suspect", suspect_1, " and friend walked past the robbed house and went up the drive of the house according to a passbyer. He did not see them come out.")
     elif sentence == suspect_2 or sentence == suspect_3 or sentence == suspect_4:
@@ -134,7 +137,7 @@ def level3():
   print("Ask questions to find the kidnapper. Remember, each suspect has a personality so the suspects may not answer your questions straight away and truthfully")
   while True:
     time.sleep(1)
-    sentence=(input("\nAsk a question or put in a number of the suspect who commited kidnapping\n>>> "))
+    sentence=(input("\nAsk a question or put in a number of the suspect who commited kidnapping\n(Type hint for help)\n>>> "))
     if "where" in sentence and "you" in sentence:
       print("Suspect", suspect_1, "refuses to answer")
       print("Suspect", suspect_2, "was at work")
@@ -163,6 +166,8 @@ def level3():
       print("Suspect", suspect_2, " has a signature but can be confirmed that that is his signature")
       print("Suspect", suspect_3, "'s signature does not match the one taken at the show")
       print("Suspect", suspect_4, "'s signature can not be confirmed")
+    elif "hint" in sentence:
+      print("If you are stuck, ask about where they were during the crime or what they were doing. \n Make sure to check their alibi and make sure that they are telling the truth.")
     elif sentence == suspect_1 or sentence == suspect_2 or sentence == suspect_4:
       print("You are fired from your job. Restart to try again")
       quit()
